@@ -11,7 +11,6 @@ Szoftverfejlesztési projektfeladat egy böngészőben futó virtuális zongora 
 
 ## Alkalmazás indítása
 
-```bash
 cd virtualis-zongora
 npm ci
 npm start
@@ -19,7 +18,6 @@ npm start
 Az alkalmazás eztkövetően érhető el: http://localhost:4200/
 
 Build
-bash
 
 cd virtualis-zongora
 npm run build
