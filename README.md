@@ -25,5 +25,5 @@ cd virtualis-zongora
 npm run build
 
 
-Projekt célja
+## Projekt célja
 A projekt célja egy egyszerű, böngészőben használható virtuális zongora elkészítése, valamint a fejlesztési folyamat dokumentálása projektalapító, tervezési, megvalósítási és zárási fázisok szerint.
