@@ -7,25 +7,24 @@ Ez a projekt egy böngészőben futó virtuális zongora alkalmazás. A felület
     - SCSS
     - Angular Material
     - Tone.js
-    
+
 Helyi MP3 zongoraminták a public/samples mappában
 
 ## Telepítés
 A projekt indítása előtt a függőségeket telepíteni kell:
 
-npm ci
-Indítás fejlesztői módban
-npm start
-Sikeres indítás után az alkalmazás itt érhető el:
+    - npm ci
+    - Indítás fejlesztői módban:
+                                - npm start
+Sikeres indítás után ezen, a helyi linken érhető el: http://localhost:4200/
 
-http://localhost:4200/
-Fordítás
+# Fordítás
 A végleges build elkészítéséhez:
+                                - npm run build
 
-npm run build
 A build eredménye a dist/virtualis-zongora mappába kerül.
 
-##Használat, user guide##
+## Használat, user guide
 Az alkalmazás kétféleképpen használható:
 
 egérrel a zongorabillentyűkre kattintva,
