@@ -31,9 +31,13 @@ egérrel a zongorabillentyűkre kattintva,
 a számítógép billentyűzetével.
 Billentyűkiosztás:
 
-Oktáv	Fehér billentyűk	Fekete billentyűk
-C4-B4	a s d f g h j	w e t z u
-C5-B5	k l é y x c v	o p b n m
+## Billentyűkiosztás
+
+| Tartomány | Fehér billentyűk | Fekete billentyűk |
+|---|---|---|
+| Első oktáv: C4-B4 | `a`, `s`, `d`, `f`, `g`, `h`, `j` | `w`, `e`, `t`, `z`, `u` |
+| Második oktáv: C5-B5 | `k`, `l`, `é`, `y`, `x`, `c`, `v` | `o`, `p`, `b`, `n`, `m` |
+
 Magyar billentyűzetkiosztásnál külön ellenőrizve lett az é, y és z használata, mert ezek eltérhetnek angol kiosztáshoz képest.
 
 ## Tesztelési javaslat
