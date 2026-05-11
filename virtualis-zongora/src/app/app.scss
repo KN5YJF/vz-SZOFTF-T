@@ -1,0 +1,30 @@
+.toolbar-title {
+  margin-left: 12px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  min-height: calc(100vh - 64px);
+}
+
+.hint {
+  margin-bottom: 12px;
+  font-size: 0.875rem;
+  color: var(--mat-sys-on-surface-variant);
+  text-align: center;
+}

@@ -1,0 +1,171 @@
+$white-w: 48px;
+$white-h: 200px;
+$key-gap: 2px;
+$black-w: 30px;
+$black-h: 120px;
+
+.keyboard-wrapper {
+  overflow-x: auto;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.loading {
+  font-family: Roboto, sans-serif;
+  color: var(--mat-sys-on-surface-variant, #666);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.keyboard {
+  &.loading {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  height: $white-h;
+  width: fit-content;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.35));
+}
+
+.key {
+  border-radius: 0 0 6px 6px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+  gap: 2px;
+  transition: background-color 60ms ease, box-shadow 60ms ease, transform 60ms ease;
+
+  .shortcut-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+
+  .note-label {
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.65;
+  }
+}
+
+.white-key {
+  width: $white-w;
+  height: $white-h;
+  margin-right: $key-gap;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-top: 3px solid #bbb;
+  color: #666;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.15),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.05);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: #f0f0ff;
+  }
+
+  &.active {
+    background: var(--mat-sys-primary-container);
+    color: var(--mat-sys-on-primary-container);
+    box-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.2),
+      inset 0 3px 8px rgba(0, 0, 0, 0.12);
+    transform: scaleY(0.985);
+    transform-origin: top center;
+
+    .shortcut-label,
+    .note-label {
+      opacity: 0.85;
+    }
+  }
+}
+
+.black-key {
+  position: absolute;
+  width: $black-w;
+  height: $black-h;
+  top: 0;
+  background: linear-gradient(180deg, #2a2a2a 0%, #111 100%);
+  border-radius: 0 0 5px 5px;
+  z-index: 2;
+  box-shadow:
+    2px 5px 12px rgba(0, 0, 0, 0.6),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.08);
+
+  .shortcut-label {
+    color: #aaa;
+    font-size: 8px;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%);
+  }
+
+  &.active {
+    background: var(--mat-sys-primary);
+    box-shadow:
+      1px 2px 5px rgba(0, 0, 0, 0.5),
+      inset 0 2px 4px rgba(0, 0, 0, 0.25);
+
+    .shortcut-label {
+      color: var(--mat-sys-on-primary);
+      opacity: 0.9;
+    }
+  }
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  font-size: 0.8rem;
+  color: var(--mat-sys-on-surface-variant);
+}
+
+.legend-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .legend-title {
+    font-weight: 600;
+    min-width: 170px;
+    text-align: right;
+    color: var(--mat-sys-on-surface);
+  }
+
+  kbd {
+    display: inline-block;
+    padding: 1px 6px;
+    margin: 0 1px;
+    background: var(--mat-sys-surface-container-high);
+    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+}

@@ -1,0 +1,12 @@
+flowchart TB
+    subgraph M1[Alacsony valószínűség]
+      A1[Alacsony hatás]
+      A2[Magas hatás\nR5]
+    end
+    subgraph M2[Magas valószínűség]
+      B1[Alacsony hatás]
+      B2[Magas hatás\nR1, R2, R3, R4]
+    end
+
+    classDef high fill:#ffe5e5,stroke:#b30000,stroke-width:2px;
+    class A2,B2 high;

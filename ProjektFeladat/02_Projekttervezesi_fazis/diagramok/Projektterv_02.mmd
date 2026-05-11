@@ -1,0 +1,29 @@
+gantt
+    title Virtuális zongora projekt ütemezés (2026)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m.%d
+
+    section Tervezés
+    Scope véglegesítés                      :a1, 2026-04-20, 1d
+    Projektterv kidolgozás                  :a2, after a1, 2d
+    Ütemterv review                         :a3, after a2, 1d
+    Tervezési fázis leadás                  :milestone, m1, 2026-04-23, 0d
+
+    section Fejlesztés
+    Angular alapok                          :b1, 2026-04-22, 1d
+    Audio motor (Tone.js Sampler)           :b2, after b1, 3d
+    Input mapping és optimalizálás          :b3, after b2, 2d
+    UI tervezés                             :c1, 2026-04-22, 1d
+    UI implementáció                        :c2, after c1, 4d
+    Komponens integráció                    :c3, after b3, 2d
+
+    section Tesztelés és dokumentáció
+    Tesztterv                               :d1, 2026-04-29, 1d
+    Funkcionális teszt és hibajavítás       :d2, after d1, 4d
+    Regressziós és kompatibilitási teszt    :d3, after d2, 1d
+    Megvalósítási dokumentáció              :e1, 2026-05-05, 3d
+    Záróanyagok                             :e2, after e1, 2d
+
+    section Lezárás
+    Végső ellenőrzés                        :f1, 2026-05-10, 1d
+    Projektzárás és leadás                  :milestone, m2, 2026-05-15, 0d

@@ -1,0 +1,11 @@
+flowchart TD
+    A[Teszteset lista kész] --> B[Funkcionális teszt futtatás]
+    B --> C{Hiba van?}
+    C -- Igen --> D[Hiba rögzítés]
+    D --> E[Javítás]
+    E --> F[Regressziós teszt]
+    F --> C
+    C -- Nem --> G[Kompatibilitási teszt]
+    G --> H{Minden célböngésző OK?}
+    H -- Nem --> D
+    H -- Igen --> I[Tesztjegyzőkönyv lezárás]

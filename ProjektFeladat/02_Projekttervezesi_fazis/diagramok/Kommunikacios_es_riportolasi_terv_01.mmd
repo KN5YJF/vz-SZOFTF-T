@@ -1,0 +1,9 @@
+flowchart LR
+    A[Napi fejlesztési munka] --> B[Rövid státusz üzenet]
+    B --> C{Blokkoló van?}
+    C -- Nem --> D[Normál folytatás]
+    C -- Igen --> E[Azonnali egyeztetés]
+    E --> F[Döntés vagy feladat-újraosztás]
+    D --> G[Heti státuszmeeting]
+    F --> G
+    G --> H[Mérföldkő riport]
