@@ -2,11 +2,12 @@
 Ez a projekt egy böngészőben futó virtuális zongora alkalmazás. A felületen látható billentyűk egérrel kattinthatók, de a zongora a számítógép billentyűzetéről is vezérelhető. A hangkeltéshez a program helyben tárolt zongoramintákat használ, ezért futás közben nem kell külső hangforrást betöltenie.
 
 ## Technológiák
-Angular 20
-TypeScript
-SCSS
-Angular Material
-Tone.js
+    - Angular 20
+    - TypeScript
+    - SCSS
+    - Angular Material
+    - Tone.js
+    
 Helyi MP3 zongoraminták a public/samples mappában
 
 ## Telepítés
